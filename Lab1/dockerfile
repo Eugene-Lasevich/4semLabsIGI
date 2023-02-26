@@ -1,0 +1,7 @@
+FROM python
+
+WORKDIR /eugene/LabPython/Lab1
+
+COPY . .
+
+CMD ["python", "Task1.py", "Task2.py", "Task3.py"]
