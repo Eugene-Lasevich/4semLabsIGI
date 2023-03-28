@@ -1,8 +1,17 @@
 from my_container import *
+import re
+def check_input():
+    username = input("Enter username: ")
+    while not re.findall(r'\b[A-z]+\b', username):
+        print("Incrorect name")
+        username = input("Enter username: ")
+    return username
+
 
 storage = UserStorage()
 while True:
-    username = input("Enter username: ")
+    username = check_input()
+
     user_container = storage.switch_user(username)
 
     while True:
