@@ -1,7 +1,5 @@
 import Utilities
 import os
-import re
-
 
 path_for_folder = "/home/eugene/Рабочий стол"
 file_name = "FileForLab"
@@ -19,7 +17,7 @@ if(Utilities.check_file(full_path)):
     print(Utilities.count_nondeclarative_sentences(tmp))
     print(Utilities.average_len_words(tmp))
     print(Utilities.average_len_sentences(tmp))
-    print(Utilities.top_repeted_grams(tmp ))
+    print(Utilities.top_repeted_grams(tmp))
 
 
 
