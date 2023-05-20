@@ -1,4 +1,6 @@
 # simple types
+import math
+
 a = 1
 aa = -1
 b = 1.2
@@ -218,3 +220,39 @@ class CCCC(AAAA, BBBB):
 
     def __init__(self):
         pass
+
+class A1:
+    x = 10
+
+    def __init__(self):
+        pass
+    def my_sin(self, c):
+        return math.sin(c)
+
+    @staticmethod
+    def stat():
+        return 145
+
+    def __str__(self):
+        return 'AAAAA'
+
+    def __repr__(self):
+        return 'AAAAA'
+
+
+class B1:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    @property
+    def prop(self):
+        return self.a * self.b
+
+    @classmethod
+    def class_meth(cls):
+        return math.pi
+
+
+class C1(A1, B1):
+    pass

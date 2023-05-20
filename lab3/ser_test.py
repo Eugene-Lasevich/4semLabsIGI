@@ -202,6 +202,24 @@ def test_class_5():
 
     assert tmp.qwe() == st.qwe()
 
+def test_class_5_1():
+    a  = A1()
+    tmp = deseralize(serealize(A()))
+
+    assert a == a
+
+
+def test_class_5_2():
+    b  = B1(1, 2)
+    tmp = deseralize(serealize(B(1)))
+
+    assert b == b
+
+def test_class_5_3():
+    a  = C1()
+    tmp = deseralize(serealize(A()))
+
+    assert a == a
 
 def test_class_6():
     tmp = deseralize(serealize(HardClass))
